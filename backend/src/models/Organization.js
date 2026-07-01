@@ -1,0 +1,1 @@
+const mongoose=require("mongoose");const schema=new mongoose.Schema({orgName:{type:String,required:true,trim:true},orgId:{type:String,required:true,unique:true,trim:true,uppercase:true},userId:{type:String,required:true,unique:true,trim:true},passwordHash:{type:String,required:true}},{timestamps:true});module.exports=mongoose.model("Organization",schema);
